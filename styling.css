@@ -1,0 +1,524 @@
+body {
+    animation: transitionIn 0.75s;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* styling navigation bar */
+.theme{
+    background-color: #171C28;
+}
+
+.darkFont-color{
+    color: white;
+}
+
+.lightFont-color{
+    color: black;
+}
+
+.button{
+    height: 3em;
+    font-size: 15px;
+    border-radius: 70%;
+    -webkit-border-radius: 70%;
+    -moz-border-radius: 70%;
+    -ms-border-radius: 70%;
+   -o-border-radius: 70%;
+    border: none;
+    background-color: #E3E3E1;
+    color: #171C28;
+    font-weight: bold;
+}
+
+.lightThemeBackground{
+    background-color: #E3E3E1;
+}
+
+.lightThemeButton{
+    font-weight: bold;
+    background-color: #171C28;
+    color: #E3E3E1;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.navbar li{
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.navbar ul{
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar ul li:not(:last-child):hover{
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+
+/* .nav-item a{
+    text-decoration: none;
+  transition: text-decoration 900ms ease-in-out;
+  color: red;
+} */
+
+.signature{
+    text-decoration: none;
+    position: absolute;
+    color: black;
+}
+.signature:hover{
+    cursor: pointer;
+}
+.signature span{
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.signature img{
+    width: 50%;
+}
+
+@media (max-width:991px){
+    .navbar li{
+        padding: 0px;
+        margin: 0px;
+    }
+    .navbar button{
+        margin-left: 10%;
+    }
+
+    .button{
+        margin: 5px 10%;
+    }
+    .navbar{
+        background: rgba(255, 255, 255, 1);
+    }
+    .signature{
+        right: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+
+/* styling home section */
+.jumbotron{
+    background: url("images/DSC_6193.jpg");
+    background-size: cover;
+    height: 53em;
+    background-position: center 80%;
+    color: white;
+    text-align: center;
+}
+
+.intro1{
+    padding-top: 5em;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.intro2{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.social-networks{
+    list-style-type: none;
+    padding-right: 2em;
+}
+
+.connect, .social-networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.social-networks li{
+    padding: 0.7em;
+}
+
+.social-networks li a img{
+    height: 2em;
+}
+  
+@media (max-width: 991px){
+    .jumbotron{
+        height: 40em;
+        /* margin-left: 2em;
+        margin-right: 2em; */
+    }
+
+    .intro1{
+        padding-top: 7em;
+        font-size: 30px;
+        font-weight: normal;
+    }
+    
+    .intro2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .social-networks li{
+        padding: 0.4em;
+    }
+
+    .social-networks li a img{
+        height: 1.9em;
+    }
+}
+
+/* Styling project section */
+
+#project-section{
+    margin-top: 0;
+    padding: 3em;
+    text-align: center;
+    height: auto;
+}
+
+#project-section h1{
+    margin-bottom: 2em;
+}
+
+.project-name{
+    height: 13em;
+    padding: 2em;
+    padding-top: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.project-name:hover{
+    /* box-shadow: 0px 3px 6px black; */
+    box-shadow: 0 0 15px -2px black;
+    transition: 0.7s;
+    font-weight: bold;
+}
+
+.project-name a{
+    text-decoration: none;
+    color: #BAC964;
+    font-weight: bold;
+}
+
+.project-name a:hover{
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.text-col{
+    color: rgba(128, 128, 128, 0.8);
+}
+
+.text-colLight{
+    color: grey;
+}
+
+@media (max-width: 991px){
+    #project-section{
+        padding: 1.5em;
+    }
+}
+
+/* Styling resume section */
+#resume-section{
+    margin-top: 0;
+    padding: 4em;
+    padding-top: 1em;
+    text-align: center;
+    height: auto;
+    /* border: solid red; */
+}
+
+#resume-section h1{
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+.column{
+    text-align: left;
+}
+
+.vit-logo img{
+    height: 4em;
+    width: 4em;
+    margin-bottom: 1em;
+    box-shadow: 0px 5px 10px black;
+}
+
+#duration{
+    margin-top: 0.5em;
+}
+
+.education p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 0;
+}
+
+#duration img{
+    height: 1em;
+    width: 1em;
+    float: left;
+    margin-top: 0.25em;
+}
+
+#duration p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    margin-top: 0;
+    margin-left: 0.5em;
+    font-weight: 100;
+}
+
+.education ul li{
+    color: grey;
+    margin-top: 0.5em;
+}
+
+.education hr{
+    height: 2px;
+}
+
+.skill-display{
+    text-align: center;
+}
+
+.skill-display h3{
+    font-family: cursive;
+    margin-top: 0.7em;
+}
+
+.skill img{
+    height: 5em;
+    width: 5em;
+}
+
+.skill-section{
+    padding: 2em;
+}
+
+.scale{
+    background-color: grey;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+  
+.proficiency {
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: white; 
+    width: 100%; 
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+   -o-border-radius: 25px;
+    height: 20px;
+}
+  
+.cpp {width: 80%; background-color: rgba(249,188,8);}
+.html {width: 70%; background-color: rgba(253,131,68);} 
+.css {width: 70%; background-color: rgba(255,18,68);} 
+.js {width: 60%; background-color: rgba(252,68,68);} 
+.python {width: 60%; background-color: rgba(0,124,220);} 
+.mysql {width: 65%; background-color: rgba(138,194,68);}
+
+.course{
+    padding: 2em;
+}
+
+.achivement li{
+    padding: 1em;
+    font-size: 20px;
+}
+
+.achivement li img{
+    height: 18px;
+    width: 18px;
+}
+
+@media (max-width: 991px){
+    #resume-section{
+        padding: 1.7em;
+    }
+
+    #resume-section h1{
+        margin-top: 1em;
+    }
+    .proficiency{
+        height: 15px;
+    }
+
+    .course{
+        padding: 0;
+    }
+
+    .achivement li{
+        padding: 1em;
+        font-size: 17px;
+    }
+    
+    .achivement li img{
+        height: 16px;
+        width: 16px;
+    }    
+}
+
+
+/* Styling About section */
+#about-section{
+    margin-top: 0;
+    padding: 4em;
+    text-align: center;
+    height: auto;
+}
+
+.content{
+    text-align: left;
+}
+
+.aboutImage{
+    padding-left: 4em;
+    padding-right: 3em;
+}
+
+.aboutText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3em;
+}
+
+.aboutText p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.reach-out{
+    text-align: center;
+}
+
+
+@media (max-width: 991px){
+    #about-section{
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+    }
+    .aboutImage{
+        padding: 1em;
+    }
+    .content{
+        text-align: center;
+    }
+    .aboutText{
+        text-align: left;
+    }
+    .aboutText{
+        text-align: left;
+        padding-right: 1em;
+    }
+}
+
+/* Styling contact section */
+#contact-section{
+    margin-top: 0;
+    padding: 4em;
+    padding-top: 5em;
+    height: auto;
+    /* border: solid red; */
+}
+
+#contact-section h1{
+    margin-bottom: 0.5em;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: solid red; */
+}
+
+.location img{
+    height: 1.5em;
+    width: 1em;
+}
+
+.contact-email{
+    margin-top: 1em;
+}
+
+.contact-email :nth-child(1){
+    margin-bottom: 0;
+}
+
+.contact-image{
+    /* border: solid red; */
+    text-align: center;
+}
+
+.contact-image img{
+    height: 60%;
+    width: 60%;
+}
+
+@media (max-width: 763px){
+    #contact-section{
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+        padding-top: 2.5em;
+    }
+    .contact-image{
+        margin: 1.5em;
+        text-align: center;
+    }
+}
+
+
+/* stylink footer */
+.footer{
+    text-align: center;
+    background-color: transparent;
+    margin-top: 4em;
+}
+
+@media (max-width: 600px){
+    .footer{
+        font-size: 80%;
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 380px){
+    .footer{
+        font-size: 60%;
+        margin-top: 2em;
+    }
+}
